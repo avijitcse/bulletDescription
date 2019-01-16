@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingTop="10dp">
+
+
+    <EditText
+        android:id="@+id/detailDescTxt"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:layout_margin="45dp"
+        android:background="@color/colorPrimary"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:textSize="18sp" />
+    <Button
+        android:layout_below="@+id/detailDescTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Validate"
+        android:onClick="checkCharLimit"/>
+
+</RelativeLayout>
